@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#search-site {
+    font-size: 1rem;
+}
+
+#search-button {
+    background-color: white;
+    font-size: 1rem;
+    color: black;
+}
+
+.input-hint {
+    font-size: .5rem;
+    color: white;
+    padding-bottom: .5rem;
+}
+
+header {
+    background-color: black;
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-text {
+    color: white;
+    font-size: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+label {
+    color: white;
+}
+
+#category-form {
+    padding: .5rem;
+    background-image: center/cover image('space.jpg')
+}
+
+.category {
+    margin: .25rem;
+}
+
+/* Template Literal Classes */
+.title {
+    padding: 1rem;
+}
+
+.general-title {
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: .5rem;
+}
+
+.info-list li {
+    padding: .25rem;
+    text-transform: capitalize;
+}
+
+.info {
+    padding: .25rem;
+    text-transform: capitalize;
+    margin: .25rem;
+}
+
+.info-article {
+    box-shadow: 1rem;
+}

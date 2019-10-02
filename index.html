@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Star Wars API</title>
+</head>
+
+<body>
+    <header>
+        <label class="header-text" for="search-site">Search Star Wars API:</label>
+        <p class="input-hint">This is meant for Filter & Name<br>or <br>Just put nothing and see what happens</p>
+        <div>
+            <input type="search" id="search-site">
+            <button class="header-text" id="search-button">Search</button>
+        </div>
+        <form action="#" id="category-form">
+            <!-- People, Films, Starships, Vehicles, Species, Planets-->
+            <div>
+                <label class="category" for="">
+                    <input class="radios" type="radio" value="people" name="category">
+                    People
+                </label>
+                <label class="category" for="">
+                    <input class="radios" type="radio" value="films" name="category">
+                    Films
+                </label>
+                <label class="category" for="">
+                    <input class="radios" type="radio" value="starships" name="category">
+                    Starships
+                </label>
+                <label class="category" for="">
+                    <input class="radios" type="radio" value="vehicles" name="category">
+                    Vehicles
+                </label>
+                <label class="category" for="">
+                    <input class="radios" type="radio" value="species" name="category">
+                    Species
+                </label>
+                <label class="category" for="">
+                    <input class="radios" type="radio" value="planets" name="category">
+                    Planets
+                </label>
+            </div>
+        </form>
+    </header>
+    <div id="container"></div>
+</body>
+
+</html>
