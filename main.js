@@ -191,37 +191,37 @@ document.querySelector('#search-button').addEventListener('click', function (eve
     let radioValue = getCheckedRadio(radios)
     // Throw in the search query and the type of filtration they would like. 
     // For class edition ---------------------------------------
-    let result = new Filtered(main, searchValue, radioValue)
-    result.lookUp()
+    // let result = new Filtered(main, searchValue, radioValue)
+    // result.lookUp()
 
-    // For functional edition ------------------------------------------
-    // fetch(`https://swapi.co/api/${radioValue}/?search=${searchValue}`)
-    //     .then(response => response.json())
-    //     .then(function (data) {
-    //         data = data.results[0]
-    //         if (radioValue === "people") {
-    //             console.log(data)
-    //             main.innerHTML = templatePerson(data)
-    //         } else if (radioValue === "films") {
-    //             console.log(data)
-    //             main.innerHTML = templateFilms(data)
-    //         } else if (radioValue === "starships") {
-    //             console.log(data)
-    //             main.innerHTML = templateStarship(data)
-    //         } else if (radioValue === "vehicles") {
-    //             console.log(data)
-    //             main.innerHTML = templateVehicle(data)
-    //         } else if (radioValue === "species") {
-    //             console.log(data)
-    //             main.innerHTML = templateSpecies(data)
-    //         } else if (radioValue === "planets") {
-    //             console.log(data)
-    //             main.innerHTML = templatePlanets(data)
-    //         } else {
-    //             main.innerHTML = templateError()
-    //         }
+    For functional edition------------------------------------------
+        fetch(`https://swapi.co/api/${radioValue}/?search=${searchValue}`)
+            .then(response => response.json())
+            .then(function (data) {
+                data = data.results[0]
+                if (radioValue === "people") {
+                    console.log(data)
+                    main.innerHTML = templatePerson(data)
+                } else if (radioValue === "films") {
+                    console.log(data)
+                    main.innerHTML = templateFilms(data)
+                } else if (radioValue === "starships") {
+                    console.log(data)
+                    main.innerHTML = templateStarship(data)
+                } else if (radioValue === "vehicles") {
+                    console.log(data)
+                    main.innerHTML = templateVehicle(data)
+                } else if (radioValue === "species") {
+                    console.log(data)
+                    main.innerHTML = templateSpecies(data)
+                } else if (radioValue === "planets") {
+                    console.log(data)
+                    main.innerHTML = templatePlanets(data)
+                } else {
+                    main.innerHTML = templateError()
+                }
 
-    //     })
+            })
 
     // For just do it -----------------------------------------------
     // fetch(`https://swapi.co/api/${radioValue}/?search=${searchValue}`)
